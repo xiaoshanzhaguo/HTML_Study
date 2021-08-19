@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人人网注册页面</title>
+</head>
+<style type="text/css">
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        color: #666666;
+        background: #fff;
+        text-align: center;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    p {
+        color: #1E7ACE;
+        margin: 4px;
+    }
+
+    input, select, textarea {
+        padding: 1px;
+        margin: 2px;
+        font-size: 11px;
+    }
+
+    .center {
+        width: 450px;
+        margin: 100px auto;
+    }
+
+    .formwrapper {
+        width: 450px;
+        margin: 15px;
+        padding: 20px;
+        text-align: center;
+        border: 1px #1E7ACE solid;
+    }
+
+</style>
+
+<script type="text/javascript">
+    function reImg() {
+        var img = document.getElementById("Img");
+        img.src = "Img?rnd=" + Math.random();
+    }
+</script>
+
+<body> <!-- 单选框加value属性 -->
+<div class="center">
+    <div class="formwrapper">
+        <!-- <p>人人网，中国<strong>最真实、最有效</strong>的社会平台，加入人人网，找回老朋友，结交新朋友。</p> -->
+        <form action="测试页面.html" method="post" name="rrLogin" id="rrLogin">
+            <h3>人人网注册</h3>
+            <p><label>电子邮箱:<input type="email" name="email" value="student@bdqn.cn" maxlength="50" id="email" readonly></label>
+            </p>
+            <p><label>设置密码:<input type="password" name="password" maxlength="16" id="password"></label></p>
+            <p><label>真实姓名:<input type="text" name="username" maxlength="8" id="name"></label></p>
+            <p>性别：<label><input type="radio" name="sex" value="男" id="male" checked> 男</label> <label><input
+                    type="radio" name="sex" value="女" id="female"> 女</label></p>
+            <p>生日:
+                <select name="year">
+                    <option value="0" selected>1991</option>
+                    <option value="1">1992</option>
+                    <option value="2">1993</option>
+                    <option value="3">1994</option>
+                    <option value="4">1995</option>
+                </select>年
+                <select name="month">
+                    <option value="0" selected>11</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>月
+                <select name="day">
+                    <option value="0" selected>30</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>日
+            </p>
+            <p>为什么要填写我的生日？</p>
+            <p>我现在:
+                <select name="select" disabled="true">
+                    <option value="0">请选择身份</option>
+                    <option value="1">学生</option>
+                    <option value="2">教师</option>
+                    <option value="3">医护人员</option>
+                    <option value="4">分析师</option>
+                    <option value="5">软件工程师</option>
+                </select>
+            </p>
+            <p><a href="#">看不清楚换一张？</a></p>
+            <p><label>验证:<input type="text" name="yanzheng" maxlength="5" id="yanzheng"></label></p>
+    </div>
+    </fieldset>
+    </form>
+</div>
+</div>
+</body>
+</html>
